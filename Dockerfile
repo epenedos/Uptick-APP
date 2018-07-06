@@ -2,7 +2,6 @@ FROM node:9.9.0
 
 RUN mkdir -p /var/www/projects/uptick
 
-RUN apt-get install -y software-properties-common
 RUN apt-add-repository -y ppa:git-core/ppa
 RUN apt-get update
 
