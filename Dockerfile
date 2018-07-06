@@ -1,4 +1,4 @@
-FROM node:9.9.0
+FROM node
 
 RUN mkdir -p /var/www/projects/uptick
 
