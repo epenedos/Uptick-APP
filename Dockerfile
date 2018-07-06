@@ -1,7 +1,14 @@
 FROM node:9.9.0
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /var/www/projects/uptick
+
+RUN apt-get install -y software-properties-common
+RUN apt-add-repository -y ppa:git-core/ppa
+RUN apt-get update
+
+RUN apt-get install -y git man
+WORKDIR /var/www/projects/uptick
+RUN git clone https://github.com/epenedos/Uptick-APP
 
 
 CMD [ "npm", "start" ]
