@@ -5,7 +5,7 @@ var mysqlConnection = mysql.createConnection({
    user: "root",
    password: "nutanix/4u",
    database: "Uptick",
-   port:3306
+   port:32792
 });
 
 mysqlConnection.connect(function(err) {
